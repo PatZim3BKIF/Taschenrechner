@@ -1,0 +1,78 @@
+#calculator {
+  max-width: 320px;
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+#display {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 32px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  resize: none;
+}
+
+.button {
+  width: 22%;
+  margin: 1%;
+  height: 60px;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.button[data-value="C"],
+.button[data-value="+/-"],
+.button[data-value="JOKE"],
+.button[data-value="/"] {
+  background-color: #555;
+}
+
+.button[data-value="-"],
+.button[data-value="/"],
+.button[data-value="*"],
+.button[data-value="="],
+.button[data-value="+"] {
+  background-color: #ff9500;
+}
+
+.button-zero {
+  width: 47%;
+  margin-left: 1%;
+}
+
+.button[data-value="0"],
+.button[data-value="."] {
+  background-color: #333;
+}
+
+.button[data-value="7"],
+.button[data-value="8"],
+.button[data-value="9"],
+.button[data-value="4"],
+.button[data-value="5"],
+.button[data-value="6"],
+.button[data-value="1"],
+.button[data-value="2"],
+.button[data-value="3"] {
+  background-color: #444;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
