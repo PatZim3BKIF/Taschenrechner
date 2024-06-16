@@ -58,7 +58,7 @@
 
 .button[data-value="0"],
 .button[data-value="."] {
-  background-color: #333;
+  background-color: ghostwhite;
 }
 
 .button[data-value="7"],
@@ -70,7 +70,7 @@
 .button[data-value="1"],
 .button[data-value="2"],
 .button[data-value="3"] {
-  background-color: #444;
+  background-color: ghostwhite;
 }
 
 .button:hover {

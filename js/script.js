@@ -2,7 +2,7 @@
 // - Holds the state of the application
 // - This is the single source of truth for the application state
 const state = {
-  currentInput: localStorage.getItem('currentInput') || '', // Load from LocalStorage
+  currentInput: localStorage.getItem('currentInput') || '',
 };
 
 // 2. STATE ACCESSORS/MUTATORS FN'S
@@ -29,16 +29,16 @@ function updateInput(value) {
       break;
     case 'JOKE':
       fetchQuote();
-      return; // Prevent render call here, fetchQuote will handle it
+      return;
     default:
       state.currentInput += value;
   }
-  localStorage.setItem('currentInput', state.currentInput); // Save to LocalStorage
+  localStorage.setItem('currentInput', state.currentInput);
 }
 
 function clearInput() {
   state.currentInput = '';
-  localStorage.removeItem('currentInput'); // Clear LocalStorage
+  localStorage.removeItem('currentInput');
 }
 
 // 3. DOM NODE REFERENCES
