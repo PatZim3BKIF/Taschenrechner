@@ -91,11 +91,13 @@ function fetchQuote() {
     .then(response => response.json())
     .then(data => {
       state.currentInput = data.value.replace(/ -https:\/\/api\.chucknorris\.io\/jokes\/[a-zA-Z0-9]+$/, '');
+      localStorage.setItem('currentInput', state.currentInput);
       render();
     })
     .catch(error => {
       console.error('Error fetching quote:', error);
       state.currentInput = 'Error';
+      localStorage.setItem('currentInput', state.currentInput);
       render();
     });
 }
