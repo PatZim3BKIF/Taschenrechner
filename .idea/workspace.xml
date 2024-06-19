@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d3a4886-fe90-4107-babc-652dfd431a5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4d3a4886-fe90-4107-babc-652dfd431a5a" name="Changes" comment="Chuck Norris fetch hat nicht mehr funktioniert (CORS) jetzt Katzen Fakts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
@@ -48,11 +47,24 @@
       <option name="presentableId" value="Default" />
       <updated>1718726706075</updated>
       <workItem from="1718726707136" duration="690000" />
-      <workItem from="1718777710643" duration="1500000" />
+      <workItem from="1718777710643" duration="2183000" />
     </task>
+    <task id="LOCAL-00001" summary="Chuck Norris fetch hat nicht mehr funktioniert (CORS) jetzt Katzen Fakts">
+      <option name="closed" value="true" />
+      <created>1718779599216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718779599216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Chuck Norris fetch hat nicht mehr funktioniert (CORS) jetzt Katzen Fakts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chuck Norris fetch hat nicht mehr funktioniert (CORS) jetzt Katzen Fakts" />
   </component>
 </project>

@@ -77,9 +77,28 @@ function onButtonClick(event) {
   render();
 }
 
+function onKeyPress(event) {
+  const key = event.key;
+  if (/\d/.test(key) || ['+', '-', '*', '/', '.'].includes(key)) {
+    updateInput(key);
+  } else if (key === 'Enter') {
+    updateInput('=');
+  } else if (key === 'Escape') {
+    updateInput('C');
+  } else if (key === 'Backspace') {
+    state.currentInput = state.currentInput.slice(0, -1);
+  }else if(key === 'c'){
+    state.currentInput = '';
+  } else if (key.toLowerCase() === 'k') {
+    updateInput('CAT');
+  }
+  render();
+}
+
 // 7. INIT BINDINGS
 // - These are the initial bindings of the event handlers
 buttons$.forEach(button => button.addEventListener('click', onButtonClick));
+document.addEventListener('keydown', onKeyPress);
 
 // 8. INITIAL RENDER
 // - Here will call the render function to render the initial state of the application
