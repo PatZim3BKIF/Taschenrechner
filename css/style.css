@@ -38,7 +38,7 @@
 
 .button[data-value="C"],
 .button[data-value="+/-"],
-.button[data-value="JOKE"],
+.button[data-value="CAT"],
 .button[data-value="/"] {
   background-color: #555;
 }

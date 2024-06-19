@@ -27,7 +27,7 @@ function updateInput(value) {
           '-' + state.currentInput;
       }
       break;
-    case 'JOKE':
+    case 'CAT':
       fetchQuote();
       return;
     default:
@@ -85,12 +85,12 @@ buttons$.forEach(button => button.addEventListener('click', onButtonClick));
 // - Here will call the render function to render the initial state of the application
 render();
 
-// Fetch Chuck Norris Jokes
+// Fetch Cat Quotes Jokes
 function fetchQuote() {
-  fetch('https://api.chucknorris.io/jokes/random')
+  fetch('https://meowfacts.herokuapp.com/')
     .then(response => response.json())
     .then(data => {
-      state.currentInput = data.value.replace(/ -https:\/\/api\.chucknorris\.io\/jokes\/[a-zA-Z0-9]+$/, '');
+      state.currentInput = data.data[0];
       localStorage.setItem('currentInput', state.currentInput);
       render();
     })
